@@ -1,6 +1,6 @@
 # Avalon NetHunter Support Module
 
-KernelSU / Magisk module for Poco F4 GT (ingres) running Android 16-based ROMs.
+KernelSU / Magisk module for Avalon Kernel.
 
 ## Features
 
@@ -30,7 +30,6 @@ Firmware loader path is configured automatically during boot.
 
 ## Requirements
 
-* Poco F4 GT (ingres)
 * Avalon Kernel
 * KernelSU or Magisk
 * USB OTG support
@@ -47,11 +46,4 @@ Firmware loader path is configured automatically during boot.
 
 This module was built specifically for Avalon Kernel and may not function correctly on other kernels.
 
-The included boot animation is mounted during early boot using post-fs-data and is intended for Android 16 LineageOS-based systems.
-
-## Credits
-
-* Kali NetHunter Project
-* KernelSU-Next
-* Linux Wireless Developers
-* RT2x00 Project
+The included boot animation is mounted during early boot using post-fs-data.
