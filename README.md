@@ -1,49 +1,74 @@
-# Avalon NetHunter Support Module
-
-KernelSU / Magisk module for Avalon Kernel.
+# Avalon Firmware
+KernelSU / Magisk module providing external wireless adapter, SDR and NetHunter support for Avalon Kernel.
 
 ## Features
+Automatically loads supported wireless and SDR driver stacks during boot
 
-* Automatically loads RT5370 monitor mode driver stack at boot
-* Bundles required firmware blobs
-* Configures firmware search path automatically
-* Supports RT5370-based USB wireless adapters
-* Includes custom Kali Linux boot animation
-* No manual insmod commands required after installation
+Bundles required firmware blobs for supported adapters
 
-## Loaded Modules
+Configures Linux firmware search paths automatically
 
-* cfg80211.ko
-* mac80211.ko
-* rt2x00lib.ko
-* rt2x00usb.ko
-* rt2800lib.ko
-* rt2800usb.ko
+Enables plug-and-play support for compatible USB WiFi adapters
 
-## Firmware
+Provides Software Defined Radio (SDR) driver support for compatible RTL2832-based devices
 
+Eliminates the need for manual module loading after every reboot
+
+## Included Support
+### Wireless Adapters
+Support is provided for a wide range of chipsets used by common USB wireless adapters, including:
+
+MediaTek MT7601U
+
+Ralink RT2500USB
+
+Ralink RT2800USB family
+
+Realtek RTL8187
+
+Realtek RTL8192CU
+
+Realtek RTL8XXXU family
+
+ZyDAS ZD1201
+
+ZyDAS ZD1211 / ZD1211B
+
+Wireless RNDIS adapters
+
+### SDR Devices
+Support is included for RTL2832-based SDR receivers and related frontend components.
+
+## Firmware Handling
 Firmware files are automatically copied to:
 
 /data/local/nhsystem/kali-arm64/lib/firmware
 
-Firmware loader path is configured automatically during boot.
+The Linux firmware loader path is configured automatically during boot.
+
+No manual firmware configuration is required.
 
 ## Requirements
+Avalon Kernel
 
-* Avalon Kernel
-* KernelSU or Magisk
-* USB OTG support
-* RT5370-based wireless adapter
+KernelSU or Magisk
+
+USB OTG support
+
+Compatible wireless adapter or SDR device
 
 ## Installation
+Flash the module using KernelSU or Magisk.
 
-1. Flash the module through KernelSU or Magisk.
-2. Reboot.
-3. Connect the adapter.
-4. Verify monitor mode functionality.
+Reboot the device.
+
+Connect the supported adapter or SDR device.
+
+Launch NetHunter and begin using the device.
 
 ## Notes
+This module was designed specifically for Avalon Kernel.
 
-This module was built specifically for Avalon Kernel and may not function correctly on other kernels.
+Compatibility on other kernels is not guaranteed.
 
-The included boot animation is mounted during early boot using post-fs-data.
+For Kali NetHunter installation and setup instructions, refer to the [NetHunter setup guide](https://github.com/ruik3z/nethunter-guide) repository.
