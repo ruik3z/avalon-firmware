@@ -42,7 +42,7 @@ Support is included for RTL2832-based SDR receivers and related frontend compone
 ## Firmware Handling
 Firmware files are automatically copied to:
 
-/data/local/nhsystem/kali-arm64/lib/firmware
+`/data/local/nhsystem/kali-arm64/lib/firmware`
 
 The Linux firmware loader path is configured automatically during boot.
 
