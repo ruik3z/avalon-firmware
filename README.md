@@ -14,7 +14,7 @@ Compatibility on other kernels is not guaranteed.
 
 For Kali NetHunter installation and setup instructions, refer to the [NetHunter setup guide](https://github.com/ruik3z/nethunter-guide) repository.
 
-# Miscellanous Details (ignore)
+# Miscellanous Details, Adapter Support, Etc (ignore)
 
 # Avalon Firmware
 KernelSU / Magisk module providing external wireless adapter, SDR and NetHunter support for Avalon Kernel.
