@@ -1,3 +1,21 @@
+## Installation
+1. Flash the module using KernelSU or Magisk.
+
+2. Reboot the device.
+
+3. Connect the supported adapter or SDR device.
+
+4. Launch NetHunter and begin using the device.
+
+## Notes
+This module was designed specifically for Avalon Kernel.
+
+Compatibility on other kernels is not guaranteed.
+
+For Kali NetHunter installation and setup instructions, refer to the [NetHunter setup guide](https://github.com/ruik3z/nethunter-guide) repository.
+
+#Miscellanous Details (ignore)
+
 # Avalon Firmware
 KernelSU / Magisk module providing external wireless adapter, SDR and NetHunter support for Avalon Kernel.
 
@@ -56,19 +74,3 @@ No manual firmware configuration is required.
 - USB OTG support
 
 - Compatible wireless adapter or SDR device
-
-## Installation
-1. Flash the module using KernelSU or Magisk.
-
-2. Reboot the device.
-
-3. Connect the supported adapter or SDR device.
-
-4. Launch NetHunter and begin using the device.
-
-## Notes
-This module was designed specifically for Avalon Kernel.
-
-Compatibility on other kernels is not guaranteed.
-
-For Kali NetHunter installation and setup instructions, refer to the [NetHunter setup guide](https://github.com/ruik3z/nethunter-guide) repository.
